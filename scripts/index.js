@@ -3,5 +3,10 @@ let form=document.getElementById("form")
     event.preventDefault()
     let email=form.email.value;
     let password=form.password.value;
-    console.log(email,password)
+    console.log(email, password)
+
+    if(email=="empher@gmail.com" && password=="empher@123"){
+        alert("Login Success")
+        window.location.href="quiz.html"
+    }
 })
